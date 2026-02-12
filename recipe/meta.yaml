@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   entry_points:
     - pserve=pyramid.scripts.pserve:main
     - pshell=pyramid.scripts.pshell:main
@@ -29,6 +29,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - setuptools <81
     - hupper >=1.5
     - plaster
     - plaster_pastedeploy
